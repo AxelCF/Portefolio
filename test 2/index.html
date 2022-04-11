@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        function temp(){
+        document.getElementById('form').action = "mailto:?to="+document.getElementById('email').value+" &body=" + document.getElementById('message').value;
+        }
+    </script>
+    
+    <div id="formulairecontact">
+        <form action="#" onsubmit="temp()" method="post" enctype="text/plain" id="form">
+                <label for="email">Adresse mail: </label>
+                <input type="email" id="email" name="email" /><br/>
+                <label for="message">Message: </label>
+                <textarea id="message" name="Message" ></textarea>
+                <input type="submit" value="Envoyer">
+        </form>
+    </div>
+</body>
+</html>
