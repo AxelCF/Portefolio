@@ -16,4 +16,4 @@ const keys = document.querySelectorAll(".key");
 keys.forEach((key) => key.addEventListener("transitionend", removeTransition));
 
 window.addEventListener("keydown", playSound);
-window.addEventListener("touchevent", playSound);
+window.addEventListener("touch", playSound);
